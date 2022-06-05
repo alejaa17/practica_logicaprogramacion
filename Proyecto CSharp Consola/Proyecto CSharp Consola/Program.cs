@@ -15,6 +15,7 @@ for (int i = 0; i < filas; i++) {
 
         array1[i , j] = rnd.Next(10);
         Console.Write(array1[i,j]);
+        Console.Write("|");
     
     
     }
