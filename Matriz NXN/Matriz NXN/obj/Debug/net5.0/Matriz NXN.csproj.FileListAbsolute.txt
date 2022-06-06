@@ -1,0 +1,16 @@
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\Matriz NXN.exe
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\Matriz NXN.deps.json
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\Matriz NXN.runtimeconfig.json
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\Matriz NXN.runtimeconfig.dev.json
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\Matriz NXN.dll
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\ref\Matriz NXN.dll
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\bin\Debug\net5.0\Matriz NXN.pdb
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.csproj.AssemblyReference.cache
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.AssemblyInfoInputs.cache
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.AssemblyInfo.cs
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.csproj.CoreCompileInputs.cache
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.dll
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\ref\Matriz NXN.dll
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.pdb
+C:\Users\Brandel Otero\Desktop\Clonacion Repo\practica_logicaprogramacion\Matriz NXN\Matriz NXN\obj\Debug\net5.0\Matriz NXN.genruntimeconfig.cache
