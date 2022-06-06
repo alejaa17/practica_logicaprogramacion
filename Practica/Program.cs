@@ -19,13 +19,12 @@ namespace Practica
 
             for (int i = 0; i < n; i++)
             {
+                Console.WriteLine("Contenido de la fila: "+ i);
                 for (int j = 0; j < n; j++)
                 {
 
                     array1[i, j] = rnd.Next(10);
 
-
-                    Console.WriteLine("Contenido del arreglo: ");
                     Console.Write(array1[i, j]);
 
                     Console.Write("|");
