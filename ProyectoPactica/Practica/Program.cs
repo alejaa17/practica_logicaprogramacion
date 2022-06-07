@@ -76,17 +76,15 @@ namespace Practica
             int sumaPorColumna = 0;
             for (int i = 0; i < n; i++)
             {
-
                 for (int j = 0; j < n; j++)
                 {
                     sumaPorColumna += array1[j, i];
 
                 }
-                sumaTotalColumnas += sumaPorColumna;
+                sumaTotalColumnas += sumaPorColumna;    
                 Console.Write("|" + sumaPorColumna);
                 sumaPorColumna = 0;
                 sumaTotalColumnas += sumaPorColumna;
-
             }
             return sumaTotalColumnas;
         }
