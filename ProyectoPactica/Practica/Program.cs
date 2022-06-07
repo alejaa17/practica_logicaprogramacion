@@ -40,8 +40,9 @@ namespace Practica
                 opcion = int.Parse(Console.ReadLine());
                 switch (opcion){
                     case 1: Console.WriteLine("Suma de filas: ");
+                        SumarFilas(array1,n);
                         break;
-                    case 2: Console.WriteLine("Suma de columnas: ");
+                    case 2: Console.WriteLine("Suma de columnas: " + SumarColumnas(array1, n));
                         break;
                     case 0: Console.WriteLine("Fin.");
                         break;
@@ -51,14 +52,43 @@ namespace Practica
             } while (opcion != 0);
         }
 
-        public int SumarFilas(int[,] array1)
+        public static void SumarFilas(int[,] array1, int n)
         {
-            return 0;
+            int sf = 0;
+            int sft = 0;
+            for(int c=0; c < n; c++)
+            {
+                for(int f = 0; f < n; f++)
+                {
+                    sf += array1[c, f];
+                }
+
+                sft += sf;
+                Console.WriteLine("- " + sft);
+                sf = 0;
+                sft = 0;
+            }
         }
 
-        public int SumarColumnas(int[,] array1)
+        public static int SumarColumnas(int[,] array1, int n)
         {
-            return 0;
+            int sumaTotalColumnas = 0;
+            int sumaPorColumna = 0;
+            for (int i = 0; i < n; i++)
+            {
+
+                for (int j = 0; j < n; j++)
+                {
+                    sumaPorColumna += array1[j, i];
+
+                }
+                sumaTotalColumnas += sumaPorColumna;
+                Console.Write("|" + sumaPorColumna);
+                sumaPorColumna = 0;
+                sumaTotalColumnas += sumaPorColumna;
+
+            }
+            return sumaTotalColumnas;
         }
     }
 }
