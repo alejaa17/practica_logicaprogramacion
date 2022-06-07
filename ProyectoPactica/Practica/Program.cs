@@ -39,9 +39,11 @@ namespace Practica
                 Console.WriteLine("\n\nIngresa el número según la opción: " + "\n1. para sumar las filas." + "\n2. para sumar las columnas. " + "\n0. para salir. ");
                 opcion = int.Parse(Console.ReadLine());
                 switch (opcion){
-                    case 1: Console.WriteLine("Suma de filas: ");
+                    case 1: 
+                        Console.WriteLine("Suma de filas: ");
                         break;
-                    case 2: Console.WriteLine("Suma de columnas: ");
+                    case 2: 
+                        Console.WriteLine("\nSuma de columnas: "  + SumarColumnas(array1, n));
                         break;
                     case 0: Console.WriteLine("Fin.");
                         break;
@@ -56,9 +58,25 @@ namespace Practica
             return 0;
         }
 
-        public int SumarColumnas(int[,] array1)
+        public  static int SumarColumnas(int[,] array1, int n )
         {
-            return 0;
+            int sumaTotalColumnas = 0;
+            int sumaPorColumna = 0;
+            for (int i = 0; i < n; i++)
+            {
+                
+                for (int j = 0; j < n; j++)
+                {
+                    sumaPorColumna += array1[j,i];
+                                   
+                }
+                sumaTotalColumnas += sumaPorColumna;    
+                Console.Write("|" + sumaPorColumna);
+                sumaPorColumna = 0;
+                sumaTotalColumnas += sumaPorColumna;
+
+            }
+            return sumaTotalColumnas;
         }
     }
 }
