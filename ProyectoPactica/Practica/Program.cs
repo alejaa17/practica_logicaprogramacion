@@ -36,13 +36,16 @@ namespace Practica
 
             do
             {
-                Console.WriteLine("\n\nIngresa el número según la opción: " + "\n1. para sumar las filas." + "\n2. para sumar las columnas. " + "\n0. para salir. ");
+                Console.WriteLine("\n\nIngresa el número según la opción: " + "\n1. para sumar las filas." + "\n2. para sumar las columnas. " + "\n4. para sumar los bordes. " + "\n0. para salir. ");
                 opcion = int.Parse(Console.ReadLine());
-                switch (opcion){
+                switch (opcion) {
                     case 1: Console.WriteLine("Suma de filas: ");
-                        SumarFilas(array1,n);
+                        SumarFilas(array1, n);
                         break;
                     case 2: Console.WriteLine("Suma de columnas: " + SumarColumnas(array1, n));
+                        break;
+                    case 4:
+                        SumarBordes(array1, n);
                         break;
                     case 0: Console.WriteLine("Fin.");
                         break;
@@ -88,5 +91,31 @@ namespace Practica
             }
             return sumaTotalColumnas;
         }
+
+        public static void SumarBordes(int[,] matriz, int num)
+        {
+            int sumaBorde = 0, final = num - 1;
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j < num; j++)
+                {
+                    sumaBorde += matriz[i, j];
+                    if (i == 0 && j == 0)
+                    {
+                        sumaBorde += matriz[i, j];
+                    }
+                    if (i == final && j == final)
+                    {
+                        sumaBorde += matriz[i, j];
+                    }
+                    if (i == j)
+                    {
+                        sumaBorde -= matriz[i, j];
+                    }
+                }
+            }
+            Console.WriteLine($"\nLa suma de los bordes es: {sumaBorde}");
+        }
+
     }
 }
