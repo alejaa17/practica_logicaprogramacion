@@ -8,15 +8,55 @@ namespace Practica
         {
             int n = 0;
             int opcion = 0;
+            int opcion2;
+
             Console.WriteLine("Bienvenido a Matriz, usted definirá el tamaño del arreglo: ");
 
             Console.WriteLine("Ingrese el número de filas y columnas: ");
             n = int.Parse(Console.ReadLine());
-
-
+            
+            
             int[,] array1 = new int[n, n];
-            Random rnd = new Random();
+            array1=LlenarMatriz(array1, n); 
 
+            do
+            {
+                Console.WriteLine("\n\nIngresa el número según la opción: " + "\n1. para sumar las filas." + "\n2. para sumar las columnas. " + "\n5. para reiniciar la matriz" + "\n0. para salir. ");
+                opcion = int.Parse(Console.ReadLine());
+                switch (opcion) {
+                    case 1: Console.WriteLine("Suma de filas: ");
+                        SumarFilas(array1, n);
+                        break;
+                    case 2: Console.WriteLine("\nSuma de columnas: " + SumarColumnas(array1, n));
+                        break;
+                    case 5: Console.WriteLine("Matriz reiniciada.");
+                        ReinciarMatriz(array1, n);
+                        Console.WriteLine("\nDesea rellenar la matriz nuevamente?" + "\n1. Sí" + "\n2.No");
+                        opcion2 = int.Parse(Console.ReadLine());
+                        if (opcion2 == 1)
+                        {
+                            Console.WriteLine("\nNueva matriz: " + "\n");
+                            LlenarMatriz(array1, n);
+                        }
+                        else
+                        {
+                            opcion = 0;
+                        }
+                       
+                        
+                        break;
+                    case 0: Console.WriteLine("\nFin.");
+                        break;
+                    default: Console.WriteLine("Ingrese una opción válida: ");
+                        break;
+                }
+            } while (opcion != 0);
+            Console.WriteLine("\nGracias por participar.");
+        }
+
+        public static int[,] LlenarMatriz(int[,] array1, int n)
+        {
+            Random rnd = new Random();
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -26,7 +66,7 @@ namespace Practica
 
                     Console.Write(array1[i, j]);
                     Console.Write("|");
- 
+
                 }
                 Console.WriteLine();
 
@@ -34,24 +74,8 @@ namespace Practica
 
             Console.WriteLine("Fin de la impresión.");
 
-            do
-            {
-                Console.WriteLine("\n\nIngresa el número según la opción: " + "\n1. para sumar las filas." + "\n2. para sumar las columnas. " + "\n0. para salir. ");
-                opcion = int.Parse(Console.ReadLine());
-                switch (opcion){
-                    case 1: Console.WriteLine("Suma de filas: ");
-                        SumarFilas(array1,n);
-                        break;
-                    case 2: Console.WriteLine("Suma de columnas: " + SumarColumnas(array1, n));
-                        break;
-                    case 0: Console.WriteLine("Fin.");
-                        break;
-                    default: Console.WriteLine("Ingrese una opción válida: ");
-                        break;
-                }
-            } while (opcion != 0);
+            return array1;
         }
-
         public static void SumarFilas(int[,] array1, int n)
         {
             int sf = 0;
@@ -88,5 +112,21 @@ namespace Practica
             }
             return sumaTotalColumnas;
         }
+
+        public static void ReinciarMatriz(int[,] array1, int n)
+        {
+            Array.Clear(array1, 0, n*n);
+            for (int c = 0; c < n; c++)
+            {
+                for (int f = 0; f < n; f++)
+                {
+                    Console.Write(array1[c, f]);
+                    Console.Write("|");
+                }
+                Console.WriteLine(" ");
+            }
+        }
+
+       
     }
 }
